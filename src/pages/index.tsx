@@ -7,7 +7,7 @@ const App = () => {
   const [mobileData, setMobileData] = useState('')
 
   const io = require("socket.io-client");
-  const SOCKET_URL = 'ws://https://remote-camera-server.vercel.app/:3002'; 
+  const SOCKET_URL = 'wss://https://remote-camera-server.vercel.app/:3002'; 
 
   const socket = io(SOCKET_URL, {
     withCredentials: true
