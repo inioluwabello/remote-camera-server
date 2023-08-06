@@ -10,8 +10,8 @@ export default function handler(
     res: NextApiResponse<Data>
 ) {
     console.log('here')
-    server.listen(8080, () => {
-        console.log('WebSocket running on port 8080');
+    server.listen(process.env.PORT, () => {
+        console.log(`WebSocket running on port ${process.env.PORT}`);
     });
     res.status(200).json({ name: 'John Doe' })
 }
