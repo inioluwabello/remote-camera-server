@@ -10,8 +10,8 @@ export default function handler(
     res: NextApiResponse<Data>
 ) {
     console.log('here')
-    server.listen(3000, () => {
-        console.log(`WebSocket running on port ${3000}`);
+    server.listen(3002, () => {
+        console.log(`WebSocket running on port ${3002}`);
     });
     res.status(200).json({ name: 'John Doe' })
 }
